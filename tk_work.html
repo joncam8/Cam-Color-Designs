@@ -66,15 +66,15 @@
 
 <body>
 
-
-
+<div id="top_header" style="background-color: #663332;
+    box-shadow: 0px 0px 15px #4a2726;">
 <div id="menu">
-
-  <img src="images/mob_menu2.png" alt="Mobile Menu Button">
-
+	<img src="images/mob_menu.png" alt="Mobile Menu Button">
 </div>
 
-
+<div id="logo">
+                    	<div class="logo"><a href="index.html"><img src="images/work_logo.png" alt="Logo"><p>Cam Color Designs</p></a></div></div>
+</div>
 
 <nav>
 
@@ -113,6 +113,7 @@
             <li><a href="scs_work.html">Say Cam Sports Project</a></li>
 
             <li><a href="ld_work.html">Lyles Dobermans Project</a></li>
+            <li><a href="logo.html">Other Design Work</a></li>
 
             <li><a href="about.html">About Me</a></li>
 
@@ -152,13 +153,6 @@
 
 
 
-<div class="logo_work" >
-
-                <div class="logo"><a href="index.html"><img src="images/logo1.png" alt="Logo"></a></div>
-
-</div>
-
-
 
   <div id="wrapper">
 
@@ -179,7 +173,8 @@
                         <div id="work_title">
 
                             <h1><strong>TKerr</strong></h1>
-
+                            <h4>Web Design | Front-End Development</h4>
+<div class="work_action_btn" id="work_about_btn"><a href="http://www.camcolordesigns.com/tkerr" target="_blank">WEBSITE</a></div>
                         </div>
 
                     </div>
@@ -202,7 +197,7 @@
 
                 
 
-                    <h4>Web Design | Front-End Development</h4>
+                    
 
                     <h2>The Story</h2>
 
@@ -210,7 +205,7 @@
 
                     
 
-                    <p>TKerr is a personal project of mine that I decide to design and develop for showcasing work. The website showcase a inspiring Graphic Designers work and to purchase his work. The designer is a good friend of mine and allowed me to use his art work to display in the site so that I can showcase my web design abilities. Although this is only a personal project at the moment, this site is in production for the future to be an ecommerce site to purchase art work. This site was created from scratch in Photoshop and developed in Dreamweaver using HTML, CSS, BOOTSTRAP and some JQUERY.</p>
+                    <p>TKerr is a personal project of mine that I decide to design and develop for showcasing work. The website showcase a inspiring Graphic Designers work and to purchase his work. The designer is a good friend of mine and allowed me to use his art work to display in the site so that I can showcase my web design abilities. <!-- <br/><br/> -->Although this is only a personal project at the moment, this site is in production for the future to be an ecommerce site to purchase art work. This site was created from scratch in Photoshop and developed in Dreamweaver using HTML, CSS, BOOTSTRAP and some JQUERY.</p>
 
                     
 
@@ -224,7 +219,7 @@
 
         
 
-        <div id="work_tools">
+        <!-- <div id="work_tools">
 
         	<div class="container-fluid">
 
@@ -268,7 +263,7 @@
 
                                 
 
-                                <div class="work_action_btn" id="work_about_btn"><a href="http://www.camcolordesigns.com/tkerr" target="_blank">See Full Site</a></div>
+                                
 
                             </div>
 
@@ -280,13 +275,13 @@
 
           </div>    
 
-    </div>
+    </div> -->
 
         
 
         <div id="work_pages">
 
-        	<div class="container-fluid">
+       	  <div class="container-fluid">
 
             	<h3>DESKTOP VIEW</h3>
 
@@ -395,27 +390,16 @@
         
 
         <div id="contact">
-
             <div class="container-fluid">
-
                 <div class="container">
-
                     
-
-                    <h2>Get Ready, Get Set, <span class="colorChange2">Go</span></h2>
-
+                    <h1>Work with<span class="colorChange2"> me </span></h1>
                     
-
-                    <p>I’m ready when <span class="colorChange2">you</span> are.</p>
-
+                    <p>Let me help <span class="colorChange2">you</span> turn your ideas into a reality.</p>
                     
-
-                    <div class="action_btn" id="contact_btn"><a href="contact.html">Let's Work Together</a></div>
-
+                    <div class="action_btn2" id="contact_btn"><a href="contact.html">Let's Get Started</a></div>
                 </div>
-
             </div>
-
         </div>
 
         
@@ -424,7 +408,7 @@
 
             <div class="container-fluid">
 
-            	<div class="logo"><a href="index.html"><img src="images/logo1.png" width="65" height="65" alt="Logo"></a></div>
+            	<div id="logo2" class="logo"><a href="index.html"><img src="images/work_logo.png" width="65" height="65" alt="Logo"></a></div>
 
             
 
@@ -448,7 +432,7 @@
 
                     <div class="row">
 
-                      <p>&copy; 2017 All Rights Reserved to Jonathan Cameron</p>
+                      <p>&copy; 2017 - 2018 All Rights Reserved to Jonathan Cameron</p>
 
                     </div>    
 
@@ -512,8 +496,13 @@ var wScroll = $(this).scrollTop();
 
 	});
 
-
-
+if($(window).scrollTop()>50){
+		$('#top_header').addClass('black');
+	}
+	else
+	{
+		$('#top_header').removeClass('black');	
+	}
 });
 
 

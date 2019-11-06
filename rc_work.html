@@ -54,9 +54,9 @@
 
   	<link rel="stylesheet" href="css/responsive.css" />
 
-  	<link href="public_html/testsite/dist/simpleLightbox.css" rel="stylesheet" />
+  	<link href="dist/simpleLightbox.css" rel="stylesheet" />
 
-  	<link rel="stylesheet" href="public_html/testsite/js/jquery.js" />
+  	<link rel="stylesheet" href="js/jquery.js" />
 
     
 
@@ -68,12 +68,15 @@
 
 
 
+<div id="top_header" style="background-color: #362b1e;
+    box-shadow: 0px 0px 15px #1f1b17;">
 <div id="menu">
-
-  <img src="images/mob_menu2.png" alt="Mobile Menu Button">
-
+	<img src="images/mob_menu.png" alt="Mobile Menu Button">
 </div>
 
+<div id="logo">
+                    	<div class="logo"><a href="index.html"><img src="images/work_logo.png" alt="Logo"><p>Cam Color Designs</p></a></div></div>
+</div>
 
 
 <nav>
@@ -88,13 +91,13 @@
 
     	<div id="logo_pos">
 
-   		  <a href="index.html"><img src="images/work_logo.png" width="65" height="65" alt="Logo"></a>
+    		<a href="index.html"><img src="images/work_logo.png" width="65" height="65" alt="Logo"></a>
 
-      </div>
+        </div>
 
         <h4>Cam Color Designs</h4> 
 
-  </div>
+    </div>
 
     
 
@@ -113,6 +116,7 @@
             <li><a href="scs_work.html">Say Cam Sports Project</a></li>
 
             <li><a href="ld_work.html">Lyles Dobermans Project</a></li>
+            <li><a href="logo.html">Other Design Work</a></li>
 
             <li><a href="about.html">About Me</a></li>
 
@@ -152,11 +156,7 @@
 
 
 
-<div class="logo_work" >
 
-                <div class="logo"><a href="index.html"><img src="images/logo1.png" alt="Logo"></a></div>
-
-</div>
 
 
 
@@ -166,7 +166,7 @@
 
         	<div class="container-fluid">
 
-           	  <div class="row" id="top_nav">
+            	<div class="row" id="top_nav">
 
                 
 
@@ -179,11 +179,12 @@
                         <div id="work_title_rc">
 
                             <h1><strong>Realcutz</strong></h1>
-
+                            <h4>Web Design | Front-End Development</h4>
+<div class="work_action_btn" id="work_about_btn_rc"><a href="http://www.camcolordesigns.com/realcutz" target="_blank">WEBSITE</a></div>
                         </div>
 
                     
-
+				</div>
                 </div>
 
             </div>
@@ -200,7 +201,7 @@
 
                 
 
-                    <h4>Web Design | Front-End Development</h4>
+                    
 
                     <h2>The Story</h2>
 
@@ -222,7 +223,7 @@
 
         
 
-        <div id="work_tools_rc">
+        <!-- <div id="work_tools_rc">
 
         	<div class="container-fluid">
 
@@ -266,7 +267,7 @@
 
                                 
 
-                                <div class="work_action_btn" id="work_about_btn_rc"><a href="http://www.camcolordesigns.com/realcutz" target="_blank">See Full Site</a></div>
+                                
 
                             </div>
 
@@ -276,9 +277,9 @@
 
                 </div>
 
-          </div>    
+            </div>    
 
-        </div>
+        </div> -->
 
         
 
@@ -292,7 +293,7 @@
 
                 	<div class="page_contain col-sm-6">
 
-               	      <img src="images/realcutz_home.png" alt="Image of Realcutz home page">
+                   	    <img src="images/realcutz_home.png" alt="Image of Realcutz home page">
 
                     </div>
 
@@ -300,9 +301,9 @@
 
                     <div class="page_contain col-sm-6">
 
-                      <img src="images/realcutz_rc.png" alt="Image of Realcutz hair design page">
+                        <img src="images/realcutz_rc.png" alt="Image of Realcutz hair design page">
 
-                      <img src="images/realcutz_fw.png" alt="Image of Realcutz For Women page">
+                        <img src="images/realcutz_fw.png" alt="Image of Realcutz For Women page">
 
                     </div>
 
@@ -395,27 +396,16 @@
         
 
         <div id="contact">
-
             <div class="container-fluid">
-
                 <div class="container">
-
                     
-
-                    <h2>Get Ready, Get Set, <span class="colorChange2">Go</span></h2>
-
+                    <h1>Work with<span class="colorChange2"> me </span></h1>
                     
-
-                    <p>I’m ready when <span class="colorChange2">you</span> are.</p>
-
+                    <p>Let me help <span class="colorChange2">you</span> turn your ideas into a reality.</p>
                     
-
-                    <div class="action_btn" id="contact_btn"><a href="contact.html">Let's Work Together</a></div>
-
+                    <div class="action_btn2" id="contact_btn"><a href="contact.html">Let's Get Started</a></div>
                 </div>
-
             </div>
-
         </div>
 
         
@@ -424,7 +414,7 @@
 
             <div class="container-fluid">
 
-            	<div class="logo"><a href="index.html"><img src="images/logo1.png" width="65" height="65" alt="Logo"></a></div>
+            	<div id="logo2" class="logo"><a href="index.html"><img src="images/work_logo.png" width="65" height="65" alt="Logo"></a></div>
 
             
 
@@ -448,7 +438,7 @@
 
                     <div class="row">
 
-                      <p>&copy; 2017 All Rights Reserved to Jonathan Cameron</p>
+                      <p>&copy; 2017 - 2018 All Rights Reserved to Jonathan Cameron</p>
 
                     </div>    
 
@@ -512,8 +502,13 @@ var wScroll = $(this).scrollTop();
 
 	});
 
-
-
+if($(window).scrollTop()>50){
+		$('#top_header').addClass('black');
+	}
+	else
+	{
+		$('#top_header').removeClass('black');	
+	}
 });
 
 
