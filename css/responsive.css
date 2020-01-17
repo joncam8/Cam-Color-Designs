@@ -5,24 +5,15 @@
 @media only screen and (max-width: 1320px) {
 
 #header #page_title {
-    margin: 12% 0% 12% 25%;
 }
 
 }
 
 @media only screen and (max-width: 1226px) {
-
-.web_contain {
-	max-width:475px;
-	}
-
-#web1, #web2, #web3, #web4 {
-	background-size:495px;
-	}
-
-#work {
-	max-width:1020px;
-	}
+    
+.contain_row {
+    max-width: 740px;
+}
 
 }
 
@@ -31,10 +22,6 @@
 
 
 #header h1 {
-
-	margin-top:0;
-
-	padding:0;
 
 	}
 
@@ -53,7 +40,6 @@
 @media only screen and (max-width: 1170px) {
 
 #header #page_title {
-    margin: 12% 10% 12% 30%;
 }
 
 }
@@ -69,7 +55,6 @@
 @media only screen and (max-width: 1050px) {
 
 #header #page_title {
-    margin: 12% 10% 12% 30%;
 }
 
 }
@@ -77,12 +62,9 @@
 @media only screen and (max-width: 1036px) {
 
 .web_contain {
-	max-width:400px;
 	}
 
 #work .row {
-    max-width: 840px;
-    margin: 0 auto 40px;
 }
 
 }
@@ -99,15 +81,9 @@
 @media only screen and (max-width: 950px) {
 
 #header #page_title {
-    margin: 12% 2% 12% 40%;
 }
 
 #header h1 {
-
-	margin-top:0;
-
-	padding:0;
-
 	}
 
 
@@ -153,15 +129,12 @@
 @media only screen and (max-width: 900px) {
 
 #header #page_title {
-    margin: 12% 2% 12% 40%;
 }
 
 #header h1 {
-	font-size:36px;
 	}
 
 #header h4 {
-	font-size:56px;
 	}
 
 }
@@ -169,12 +142,9 @@
 @media only screen and (max-width: 886px) {
 
 .web_contain {
-	max-width:300px;
 	}
 
 #work .row {
-    max-width: 640px;
-    margin: 0 auto 40px;
 }
 
 @media only screen and (max-width: 847px) {
@@ -198,9 +168,6 @@
 
 
 #header h1 {
-	font-size:36px;
-	margin-top:0;
-	padding:0;
 	}
 
 	
@@ -255,7 +222,6 @@
 	}
 
 #header #page_title {
-    margin: 12% 0% 12% 45%;
 }
 
 }
@@ -263,7 +229,7 @@
 @media only screen and (max-width: 790px) {
 
 #header #page_title {
-    margin: 12% 0% 12% 45%;
+    
 }
 
 
@@ -271,6 +237,26 @@
 
 @media only screen and (max-width: 767px) {
 
+ .work_container {
+    margin-top: 0px;
+    }
+    
+.contain_row {
+    max-width: 370px;
+    margin-bottom: 0px;
+}    
+    
+    .lp_title_container {
+        margin:0;
+        padding:0;
+        margin:auto;
+    }   
+
+#designs p {
+    padding: 20px;
+}
+    
+    
 #header {
 	background-attachment:inherit;
 	background:
@@ -292,22 +278,18 @@
 
 
 #header #page_title {
-    margin:0;
-	padding:0;
-	margin-top:60px;
+    padding-top:20%;
 } 
 
 #header h1 {
-	font-size:26px;
-	padding:0;
-	margin:0;
 	text-align:center;
+    font-size: 60px;
 	}
 
 #header h4 {
 	text-align:center;
 	padding:0 25px;
-	font-size:36px;
+	font-size:22px;
 	}
 
 #header p {
@@ -316,41 +298,16 @@
 	font-size:18px;
 	}
 
-#btn_center {
-	max-width: 336px;
-	margin: 60% auto 0%;
-	
-	}
-
-#btn_center_container {
-	display:flex;
-	max-width:354px;
-	margin:auto;
-	}
-
-
-#btn_center:after {
-	content:'';
-	display:block;
-	clear:both;
-	
-	}
-
 
 .action_btn {
-    /* margin-right: 15px; */
-    text-align: center;
-    margin: 20px;
-    padding: 0;
 }
 
 #about_btn a:nth-last-child(2) {
-	margin-right:0;
+	
 	
 	}
 
 .action_btn {
-	margin-right:20;
 	}
 
 .action_btn:nth-last-child(2) {
@@ -535,22 +492,11 @@ div.box1.p_mod.col-sm-8 {
 
 .action_btn {
 
-	padding:11px 0px;
-
-	max-width:280px;
-
-	font-size:14px;
-
 	}
 
 
 
 #about_btn a:link {
-
-	padding:20px 30px;
-
-	max-width:160px;
-
 	}
 
 
@@ -607,7 +553,7 @@ div.box1.p_mod.col-sm-8 {
 	}
 	
 #about_header {
-	background: url(../images/header_bg4_md.jpg);
+	background: url(../images/header_bg4.jpg);
 	background-size:cover;
 	background-repeat:no-repeat;
 	}
@@ -619,7 +565,7 @@ div.box1.p_mod.col-sm-8 {
 	}	
 
 #logo_header {
-	background: url(../images/logo_bg_md.jpg);
+	background: url(../images/logo_bg.jpg);
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center;
@@ -645,7 +591,7 @@ div.box1.p_mod.col-sm-8 {
 	margin-top: 20px;
 	font-size:16px;
 	line-height: 22px;
-    padding: 0px 15px;
+    padding: 0px 30px;
 	}
 
 
@@ -675,8 +621,6 @@ div.box1.p_mod.col-sm-8 {
 
 
 #work_about .container p {
-
-	padding:0;
 	
 	}
 
@@ -875,7 +819,8 @@ margin: 0;
     max-width: 475px;
 
 }
-
+    
+}
 @media only screen and (max-width: 667px) {
 
 #work_title h1, #work_title_tk h1, #work_title_rc h1, #work_title_scs h1, #work_title_ld h1, #about_title h1, #contact_title h1 {
@@ -903,6 +848,26 @@ margin: 0;
 
 }
 
+@media only screen and (max-width: 480px) {
+
+.web_contain {
+    max-width: 280px;
+}
+    
+#work h2 {
+	font-size:20px;
+	}
+
+.contain_row {
+    max-width: 290px;
+}   
+ 
+.work_container {
+    width: 290px;
+}    
+    
+}    
+    
 @media only screen and (max-width: 445px) {
 
 
@@ -927,7 +892,7 @@ margin:auto;
 	}			
 
 #header h4 {
-	
+	font-size: 15px;
 	}
 
 .section_title {
@@ -938,7 +903,6 @@ margin:auto;
 
 .web {
 
-	padding:111px 0px;
 
 	}
 
@@ -965,7 +929,6 @@ margin:auto;
 
 
 #about_btn a:link {
-    padding: 10px 20px;
 }
 
 
@@ -978,12 +941,9 @@ margin:auto;
 	}
 
 #btn_center {
-	height:60px;
 	}
 
 #btn_center_container {
-	margin:auto;
-	max-width:314px;
 	}
 
 #about .container {
@@ -1068,7 +1028,7 @@ margin:auto;
 #header h1 {
 
 	
-
+    font-size: 40px;
 	line-height:30px;
 
 	}			
@@ -1093,34 +1053,22 @@ margin:auto;
 
 .web {
 
-	padding:83px 0px;
-
 	}
 
 	
 
 .action_btn {
-	padding:5px 0px;
-	max-width:280px;
-	font-size:12px;
- 	float:none;
-	text-align:center;
-	margin:auto;
 	}	
 
 
 
 #about_btn a:link {
 
-	padding:10px 20px;
-
 	}	
 
 
 
 #contact_btn a:link {
-
-	padding:10px 20px;
 
 	}	
 

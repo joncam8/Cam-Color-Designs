@@ -14,6 +14,8 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
        
+        
+        
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     
@@ -30,6 +32,11 @@
         <link rel="stylesheet" href="js/jquery.js" />
         <link rel="shortcut icon" type="image/png" href="images/logo1.png">
         
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+        <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+        
+        <link href="css/lightbox.min.css" rel="stylesheet" />
     </head>
 
     <body>
@@ -90,19 +97,19 @@
                     
                     <div class="container">
                         <div id="page_title">
-                            <h1>Hi I'm Jonathan</h1>
-                            <h4>Web Designer <!--&amp; Front-End Developer--></h4>
+                            <h1>Jon Cameron</h1>
+                            <h4>Web Designer &amp; Developer</h4>
                             <br/>
                             
-                            <h2>I am a Web Designer and Developer from Chicago Illinois that builds websites. I thrive on helping small businesses grow and succeed beyond their expectations. If you are looking to grow your business, I am currently available to helping you build a brand and elevate your business to the next level.
+                            <!-- <h2>I am a Web Designer and Developer from Chicago Illinois that builds websites. I thrive on helping small businesses grow and succeed beyond their expectations. If you are looking to grow your business, I am currently available to helping you build a brand and elevate your business to the next level.</h2> -->
     
-       </h2>
+       
                             
                             <div id="btn_center">
                                 <div id="btn_center_container" class="flex-container">   
                          
-                            <div class="action_btn" id="about_btn"><a href="about.html">ABOUT</a></div>
-                            <div class="action_btn a_btn2" id="contact2_btn"><a style="margin-right:0;" href="contact.html">CONTACT</a></div>
+                                <div class="action_btn" id="about_btn"><a href="about.html">ABOUT</a></div>
+                                <div class="action_btn a_btn2" id="contact2_btn"><a href="contact.html">CONTACT</a></div>
                                 </div>
                             </div>
                             
@@ -117,69 +124,238 @@
             <div class="section_title" id="section_title">
                 <div class="container-fluid">
                     <h1>My work</h1>
-                    <p>Displayed below are some of my most recent website creations. If you like what you see here I know you are going to love what I can do for your website. I believe in today’s world a website is much needed if you are trying to stay in business and grow as a company. <br/><br/><strong>Let me help you grow your business.</strong></p>
+                    <p>Displayed below are some of my most recent website creations. <a href="contact.html">Hire Me</a></p><!-- If you like what you see here I know you are going to love what I can do for your website. I believe in today’s world a website is much needed if you are trying to stay in business and grow as a company. <br/><br/><strong>Let me help you grow your business.</strong></p> -->
                 </div>
             </div>
             
             <div id="work">
                 <div class="container-fluid">
-                
-                    <div class="row">
-                        <div class="web_contain col-sm-6">
-                            <div class="web" id="web1">
+                        
+                            
+                            <h3>Website Development</h3>
+                    
+                            <div class="row">
                                 
-                                <div class="web_pos">
-                                    <h2>tkerr</h2>
-                                
-                                    <div class="web_info circle"><a href="tk_work.html">View Project</a></div>
+                                <div class="contain_row">
+                                    
+                                    <div class="work_container">
+                                        <a href="tulle_work.html">
+                                            <div class="web_contain col-sm-4">
+                                                <div class="web" id="web5">
+                                                    <div class="web_pos">
+                                                        <h2>Tangled Up In Tulle</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <div class="links">
+                                            <div class="git">
+                                                <a href="https://github.com/joncam8/Tulle" target="_blank">
+                                                    <img src="images/github_logo.svg" alt="logo of github"/>
+                                                </a>
+                                            </div>
+                                            
+                                            <div class="site">
+                                                <a href="http://www.camcolordesigns.com/tulle" target="_blank">Visit Site</a>
+                                            </div>
+                                        </div> 
+                                    </div>
+
+                                    <div class="work_container">
+                                        <a href="tk_work.html">
+                                            <div class="web_contain col-sm-4">
+                                                <div class="web" id="web1">
+                                                    <div class="web_pos">
+                                                        <h2>tkerr</h2>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </a>
+
+                                        <div class="links">
+                                            <div class="git">
+                                                <a href="https://github.com/joncam8/TKerr" target="_blank">
+                                                    <img src="images/github_logo.svg" alt="logo of github"/>
+                                                </a>
+                                            </div>
+                                            
+                                            <div class="site">
+                                                <a href="http://www.camcolordesigns.com/tkerr" target="_blank">Visit Site</a>
+                                            </div>
+                                        </div>  
+                                    </div>
+
+
+                                    <div class="work_container">    
+                                        <a href="rc_work.html">
+                                            <div class="web_contain col-sm-4">
+                                                <div class="web" id="web2">
+                                                    <h2>Realcutz</h2>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    <div class="links">
+                                        <div class="git">
+                                            <a href="https://github.com/joncam8/Real-Cutz" target="_blank">
+                                                <img src="images/github_logo.svg" alt="logo of github"/>
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="site">
+                                            <a href="http://www.camcolordesigns.com/realcutz" target="_blank">Visit Site</a>
+                                        </div>
+                                    </div>    
                                 </div>
-                            </div>
-                        </div>
-                        
-                        <div class="web_contain col-sm-6">
-                            <div class="web" id="web2">
+                            
                                 
-                                <h2>Realcutz</h2>
-                                
-                                <div class="web_info"><a href="rc_work.html">View Project</a></div>
+                                <div class="contain_row">
+                                    
+                                    <div class="work_container">
+                                        <a href="scs_work.html">
+                                            <div class="web_contain col-sm-6">     
+                                                <div class="web" id="web3">
+                                                    <h2>Say Cam Sports</h2>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    
+                                        <div class="links">
+                                            <div class="git">
+                                                <a href="https://github.com/joncam8/Say-Cam-Sports" target="_blank">
+                                                    <img src="images/github_logo.svg" alt="logo of github"/>
+                                                </a>
+                                            </div>
+                                            
+                                            <div class="site">
+                                                <a href="http://www.camcolordesigns.com/saycamsports" target="_blank">Visit Site</a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    
+                                    <div class="work_container">
+                                        <a href="ld_work.html">
+                                            <div class="web_contain col-sm-6">
+                                                <div class="web" id="web4">
+                                                    <h2>Lyles Dobermans</h2>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <div class="links">
+                                            <div class="git">
+                                                <a href="https://github.com/joncam8/Lyles-Dobermans" target="_blank">
+                                                    <img src="images/github_logo.svg" alt="logo of github"/>
+                                                </a>
+                                            </div>
+                                            
+                                            <div class="site">
+                                                <a href="http://www.lylesdobermans.com" target="_blank">Visit Site</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        
+                                </div>
+                                    
                             </div>
+                                
                         </div>
                     
-                        <div class="web_contain col-sm-6">     
-                            <div class="web" id="web3">
-                                
-                                <h2>Say Cam Sports</h2>
-                                
-                                <div class="web_info"><a href="scs_work.html">View Project</a></div>
-                            </div>
-                        </div>
-                        
-                        <div class="web_contain col-sm-6">
-                            <div class="web" id="web4">
-                                
-                                <h2>Lyles Dobermans</h2>
-                                
-                                <div class="web_info"><a href="ld_work.html">View Project</a></div>
-                            </div>
-                        </div>
-                        
-                        
-                     
-                    
-                        
-                </div>
+                    </div>
                 
+        
+                    <h3>Landing Page Designs</h3> 
+
+                    <div class="row">
+                        
+                        <div class="contain_row">
+                            
+                            <div class="work_container">
+                                    <a href="images/lipstick_Landing-Page.jpg" data-lightbox="img01" id="single_image">
+                                        <div class="web_contain col-sm-4">
+                                            <div class="web" id="web6" target="_self">
+                                                <h2>The Dream Lipstick</h2>
+                                                <div class="web_pos">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <div class="lp_title_container">
+                                        <p  class="lp_title">The Dream Lipstick</p>    
+                                    </div>    
+                                </div>
+
+
+
+                                <div class="work_container">
+                                    <a href="images/Landing-Page.jpg" data-lightbox="img01" id="single_image"><div class="web_contain col-sm-4">
+                                        <div class="web" id="web7">
+
+                                            <div class="web_pos">
+                                                <h2>RGB Africa</h2>
+
+                                                <!-- <div class="web_info circle"><a href="tk_work.html">View Project</a> </div> -->
+                                            </div>
+
+                                        </div>
+
+                                    </div></a>
+
+                                    <div class="lp_title_container">
+                                        <p class="lp_title">RGB Africa</p>
+                                    </div>    
+                                </div>
+
+                                <div id="myModal2" class="modal2">
+                                    <span class="close">&times;</span>
+                                    <img src="images/Landing-Page.jpg" class="modal-content2" id="images/Landing-Page.jpg" alt="image of landing page">
+
+                                </div>
+
+                                <div class="work_container">    
+                                    <a href="images/Kids-Toys-Landing-Page.jpg" data-lightbox="img01" id="single_image"><div class="web_contain col-sm-4">
+                                        <div class="web" id="web8">
+
+                                            <h2>Toys For All</h2>
+                                        </div>
+                                    </div></a>
+
+                                    <div class="lp_title_container">
+                                        <p class="lp_title">Toys For All</p>
+                                    </div>    
+                                </div> 
+
+                                <div id="myModal3" class="modal3">
+                                    <span class="close">&times;</span>
+                                    <img src="images/Kids-Toys-Landing-Page.jpg" class="modal-content3" id="images/Kids-Toys-Landing-Page.jpg" alt="Kids-Toys-Landing-Page">
+
+                                </div>
+                        </div>
+                   </div>
+                
+                
+                
+                </div>
+                    
+                    
+                    <div class="container-fluid">
+                        <div id="designs_full">
                 <div id="designs">
                 
                 <h1>I do more than just websites</h1>
                 
                 <p>A website isn't a website with a branded identity, a logo that can be rememberable for a lifetime. There are also other design elements that I can create to help you grow and stand out from the rest of the crowd.</p> 
                      
+                    <img src="images/blk_hoh_logo.png" alt="image of hearts of home logo"/>
+                    
                      <div class="action_design_btn" id="design_btn"><a href="logo.html">Check It Out</a></div>
                 </div>
-                
-            </div>
-            </div>
+                </div>
+            
             
             <div id="wid">
             
@@ -310,20 +486,24 @@
                         </div>    
                         
                         <div class="row">
-                          <p>&copy; 2017 - 2018 All Rights Reserved to Jonathan Cameron</p>
+                          <p>&copy; 2017 - 2020 All Rights Reserved to Jonathan Cameron</p>
                         </div>    
                     </div>
                     
                 </div>
             </div>
-            
-    
+        </div>
+   
         
         <script>
     $(document).ready(function() {
         $("#close").click(function() {
             $("nav").fadeOut(1000);						   
         });	
+        
+        $("#web6").click(function() {
+            $(".lp_show").fadeIn(1000);						  
+        });
         
         $("#menu").click(function() {
             $("nav").fadeIn(1000);						  
@@ -413,6 +593,35 @@
         document.documentElement.scrollTop = 0;
     }
     </script>
+                        
+    <script>
+    $(document).ready(function() {
+
+	/* This is basic - uses default settings */
+	
+	$("a#single_image").fancybox();
+	
+	/* Using custom settings */
+	
+	$("a#inline").fancybox({
+		'hideOnContentClick': true
+	});
+
+	/* Apply fancybox to multiple items */
+	
+	$("a.group").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false
+	});
+	
+});
+                       
+</script>                         
       
+<script src="js/lightbox-plus-jquery.min.js"></script>        
+        
     </body>
 </html>
